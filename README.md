@@ -6,7 +6,7 @@ an eslint config for my own use case. You can use it too though :smile:
 
 ### How to install
 ```bash
-npm i -D eslint eslint-config-hungrydev eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx eslint-plugin-react eslint-plugin-react-hooks
+npm i -D eslint eslint-config-hungrydev eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### Usage
@@ -17,6 +17,8 @@ module.exports = {
   
   rules: {
     // ... add your own override here
+    // if you use react 17^, you can disable react/jsx-filename-extension rules
+    // "react/jsx-filename-extendsion": "off",
   }
 };
 ```
